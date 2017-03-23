@@ -36,8 +36,7 @@ export class AppComponent implements OnInit {
 
   logout() {
     this.oktaSignIn.signOut(() => {
-      this.showLogin();
-      this.user = null;
+      location.reload();
     });
   }
 }
